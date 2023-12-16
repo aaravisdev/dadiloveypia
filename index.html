@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Dad</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      margin: 0;
+      padding: 20px;
+      animation: colorChange 8s ease-in-out infinite alternate;
+    }
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      animation: fadeInDown 1s ease-out;
+    }
+    main {
+      padding: 20px;
+    }
+    .apology {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-out, bounce 1s ease-in-out infinite, colorChangeText 5s infinite, rainbowBG 10s linear infinite;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes colorChange {
+      0% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      }
+      100% {
+        background: linear-gradient(45deg, #fad0c4, #ff9a9e);
+      }
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    @keyframes colorChangeText {
+      0% {
+        color: #ff0000;
+      }
+      25% {
+        color: #00ff00;
+      }
+      50% {
+        color: #0000ff;
+      }
+      75% {
+        color: #ffff00;
+      }
+      100% {
+        color: #ff00ff;
+      }
+    }
+    @keyframes rainbowBG {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+    .gif-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      animation: rotate 6s linear infinite, scaleUp 2s ease-in-out infinite alternate, colorChangeBorder 4s infinite, tilt 5s ease-in-out infinite;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes scaleUp {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+    @keyframes colorChangeBorder {
+      0% {
+        border-color: #ff0000;
+      }
+      25% {
+        border-color: #00ff00;
+      }
+      50% {
+        border-color: #0000ff;
+      }
+      75% {
+        border-color: #ffff00;
+      }
+      100% {
+        border-color: #ff00ff;
+      }
+    }
+    @keyframes tilt {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(3deg);
+      }
+      50% {
+        transform: rotate(-3deg);
+      }
+      75% {
+        transform: rotate(2deg);
+      }
+    }
+    .heart {
+      color: red;
+      animation: heartbeat 1s ease-in-out infinite;
+    }
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Oops, Sorry Dad! <span class="heart">❤️</span></h1>
+  </header>
+  <main>
+    <div class="apology">
+      <h2>Hey Dad,</h2>
+      <p>I know I messed up and I'm really, really sorry for that. My behavior was not cool, and I totally get it if you're mad or upset.</p>
+      <p>I promise I'll do better next time. I'll try to be more responsible and think before acting. I don't like seeing you upset, and I hope you can forgive me.</p>
+      <p>Thanks for being the best dad ever. You mean a lot to me, and I love you loads!</p>
+      <p>Sorry again, <br>Love Aarav</p>
+    </div>
+    <div class="gif-container">
+      <p>Here are some cool GIFs to say sorry:</p>
+      <!-- You can add more GIFs or images here -->
+      <img src="https://media1.tenor.com/m/i-ciHIyFVJUAAAAC/iloveyou-so-much.gif" alt="Sorry GIF">
+      <img src="https://media.tenor.com/dzJmmllE4aoAAAAi/the-party-marshmallows-im-sorry.gif" alt="Apology GIF">
+    </div>
+  </main>
+</body>
+</html>
